@@ -1,0 +1,163 @@
+@charset "UTF-8";
+
+html {
+    font-size: 100%;
+}
+
+body {
+    background-color: rgb(231,229,193);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-image:linear-gradient(to top ,#164F2E,#227846,#2DA15D);
+    margin: 0;
+    padding: 1px 0 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: 'BebasNeue Bold';
+    src: url(pacote-projeto-d010/fontes/BebasNeue\ Bold.otf) format(woff);
+}
+
+#curiosidades{
+    font-family: 'BebasNeue Bold',Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 3em;
+    text-align: center;
+}
+
+#paragrafocuriosidades {
+    margin: 0 0 40px 0;
+    text-align: center;
+    color: white;
+}
+
+nav{
+    text-align: left;
+}
+
+.menu {
+    margin: 8px;
+    padding: 3px;
+    color: rgb(224, 224, 224);
+    text-decoration: none;
+}
+
+.menu:hover {
+    background-color: #081d10;
+    color: #2DA15D;
+    border-radius: 10px;
+}
+
+main {
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    min-width: 280px;
+    margin: 0 auto 30px auto;
+    padding: 1px 13px 1px 13px;
+    text-align: justify;
+    border-radius: 0 0 10px 10px;
+}
+
+@font-face {
+    font-family: 'idroid';
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+}
+
+.titulos1 {
+    font-family: 'idroid',Arial, Helvetica, sans-serif;
+    color: #0d2e1b;
+    font-size: 30px;
+    text-align: justify;
+}
+
+.titulos2 {
+    font-family: 'idroid',Arial, Helvetica, sans-serif;
+    color: #0d2e1b;
+    font-size: 20px;
+    background-image: linear-gradient(to right,rgb(162, 255, 162),transparent);
+    text-align: justify;
+}
+
+p {
+    text-indent: 20px;
+    text-align: justify;
+    font-size: 1em;
+}
+
+.links {
+    background-color: rgb(162, 255, 162);  
+    text-decoration: none;
+}
+
+.links::after {
+    background-color: rgb(162, 255, 162);
+    content: "🔗";
+}
+
+span {
+    background-color: rgb(162, 255, 162);
+}
+
+img {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.imgbugdroid {
+    width: 40%;
+}
+
+iframe {
+    display: block;
+    margin: 0;
+    padding: 5%;
+    width: 90%;
+    background-color: #164F2E ;
+}
+
+.asi {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(128,226,170);
+    border-radius: 10px 10px 10px 10px;
+    font-size: 1em;
+}
+
+#tituloasi {
+    background-color: #081d10;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.paraasi {
+    padding: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.seta::before {
+    content: "✓";
+}
+
+#ulaside {
+    list-style-type: none;
+    display: inline-table;
+
+}
+
+footer {
+    background-color: #081d10;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 13px;
+}
+
