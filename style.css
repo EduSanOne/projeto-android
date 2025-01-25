@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 html {
-    font-size: 100%;
+    font-size:16px
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif+Todhri&display=swap');
 
 @font-face {
     font-family: 'android';
@@ -20,100 +20,111 @@ html {
     --color05: #227846;
     --color06: #164F2E;
     --color07: #081d10;
-    
+    --color08: #8dd88d; /*Cor para degrade junto a color03*/
+
     --fonte-padrao:  Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue';
     --fonte-android: 'android', Arial, Helvetica, sans-serif;
 }   
 
 body {
-    background-color: var(--color01);
+    background-color: var(--color02);
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
+/* Cor e config do Cabeçaho da página */
 header {
-    background-image:linear-gradient(to top ,var(--color04),var(--color03),var(--color02));
+    background-image:linear-gradient(to top ,var(--color06),var(--color05),var(--color04));
     margin: 0;
-    padding: 1px 0 5px 0;
+    padding: 10px;
 }
 
+/*Cor do Título do Cabeçalho */
 header h1{
-    font-family: 'Bebas Neue';
-    color: var(--color06);
+    font-family: var(--fonte-destaque);
+    color: var(--color00);
     text-align: center;
+    font-weight: normal;
+    font-size: 3em;
+    text-shadow: 1px 1px 10px#0000008c;
+
 }
 
+/*Cor do parágrafo do Cabeçalho */
 header p {
     margin: 0 0 40px 0;
     text-align: center;
-    color: var(--color06);
+    color: var(--color00);
+    font-family: var(--fonte-padrao);
+    text-shadow: 1px 1px 10px#0000008c;
+}
+
+/* Botões de navegação apenas de ilustração*/
+nav a {
+    text-shadow: 1px 1px 10px#0000008c;
+    text-align: left;
+    margin bottom: 8px;
+    padding: 5px;
+    color: var(--color00);
+    text-decoration: none;
     font-family: var(--fonte-padrao);
 }
 
-nav{
-    text-align: left;
-
-}
-
-nav a {
-    margin: 8px;
-    padding: 3px;
-    color: var(--color06);
-    text-decoration: none;
-}
-
 nav a:hover {
-    background-color: #;
+    background-color: var(--color07);
     color: #2DA15D;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
+/*Conteúdo Principal configuração */
 main {
-    background-color: var(--color06);
+    background-color: var(--color00);
     width: 90%;
     max-width: 800px;
     min-width: 280px;
     margin: 0 auto 30px auto;
-    padding: 1px 13px 1px 13px;
+    padding: 1px 13px;
     text-align: justify;
-    border-radius: 0 0 10px 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.425);
 }
 
+/*Titulos de main */
 main h1 {
-    font-family: 'idroid',Arial, Helvetica, sans-serif;
-    color: #0d2e1b;
-    font-size: 30px;
-    min-width: 50%;
+    font-family: var(--fonte-android);
+    color: var(--color06);
+    text-align: initial;
+    font-size: 1.8em;
 }
 
-main h2 {
+/*Subtitulos de main*/
+main h2{
     font-family: var(--fonte-android);
-    color: var(--color05)
-    font-size: 20px;
-    background-image: linear-gradient(to right,rgb(162, 255, 162),transparent);
+    color: var(--color06);
+    font-size: 1.3em;
+    background-image: linear-gradient(to right,var(--color08),var(--color03),transparent);
     text-align: justify;
 }
 
-p {
+/*Parágrafos de main*/
+main p {
+    font-family: var(--fonte-padrao);
     text-indent: 20px;
     text-align: justify;
     font-size: 1em;
+    line-height: 25px;
 }
 
-.links {
+main a {
     background-color: rgb(162, 255, 162);  
     text-decoration: none;
 }
 
-.links::after {
-    background-color: rgb(162, 255, 162);
+main a::after {
     content: "🔗";
-}
-
-span {
-    background-color: rgb(162, 255, 162);
 }
 
 img {
@@ -123,7 +134,7 @@ img {
 }
 
 .imgbugdroid {
-    width: 40%;
+    width: 45%;
 }
 
 iframe {
@@ -132,37 +143,42 @@ iframe {
     padding: 5%;
     width: 90%;
     background-color: #164F2E ;
+    text-shadow: 1px 1px 10px#0000008c;
 }
 
-.asi {
-    font-family: Arial, Helvetica, sans-serif;
+/*Config de Aside*/
+aside {
     background-color: rgb(128,226,170);
     border-radius: 10px 10px 10px 10px;
-    font-size: 1em;
+    box-shadow: 1px 1px 10px#0000008c;
 }
 
-#tituloasi {
+aside h3 {
     background-color: #081d10;
     color: white;
     border-radius: 10px 10px 0px 0px;
     text-align: justify;
     padding: 10px;
-    font-size: 1.2em;
+    font-size: 1em;
+    font-family: var(--fonte-padrao);
 }
 
-.paraasi {
-    padding: 1em;
-    font-family: Arial, Helvetica, sans-serif;
+aside p {
+    font-family: var(--fonte-padrao);
+    font-size: 1em;
+    padding: 10px;
+
 }
 
-.seta::before {
-    content: "✓";
-}
-
-#ulaside {
+aside ul{
+    font-family: var(--fonte-padrao);
+    display: inline-block;
+    columns: 2;
     list-style-type: none;
-    display: inline-table;
+}
 
+li::before {
+    content: "✓";
 }
 
 footer {
