@@ -4,57 +4,74 @@ html {
     font-size: 100%;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'android';
+    src: url(pacote-projeto-d010/fontes/idroid.otf);
+}
+
+:root {
+    --color00: #ffffff;
+    --color01: #000000;
+    --color02: #e7e5c1;
+    --color03: #a2ffa2;
+    --color04: #2DA15D;
+    --color05: #227846;
+    --color06: #164F2E;
+    --color07: #081d10;
+    
+    --fonte-padrao:  Arial, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue';
+    --fonte-android: 'android', Arial, Helvetica, sans-serif;
+}   
+
 body {
-    background-color: rgb(231,229,193);
+    background-color: var(--color01);
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
 header {
-    background-image:linear-gradient(to top ,#164F2E,#227846,#2DA15D);
+    background-image:linear-gradient(to top ,var(--color04),var(--color03),var(--color02));
     margin: 0;
     padding: 1px 0 5px 0;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-@font-face {
-    font-family: 'BebasNeue Bold';
-    src: url(pacote-projeto-d010/fontes/BebasNeue\ Bold.otf) format(woff);
-}
-
-#curiosidades{
-    font-family: 'BebasNeue Bold',Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: 3em;
+header h1{
+    font-family: 'Bebas Neue';
+    color: var(--color06);
     text-align: center;
 }
 
-#paragrafocuriosidades {
+header p {
     margin: 0 0 40px 0;
     text-align: center;
-    color: white;
+    color: var(--color06);
+    font-family: var(--fonte-padrao);
 }
 
 nav{
     text-align: left;
+
 }
 
-.menu {
+nav a {
     margin: 8px;
     padding: 3px;
-    color: rgb(224, 224, 224);
+    color: var(--color06);
     text-decoration: none;
 }
 
-.menu:hover {
-    background-color: #081d10;
+nav a:hover {
+    background-color: #;
     color: #2DA15D;
     border-radius: 10px;
 }
 
 main {
-    background-color: white;
+    background-color: var(--color06);
     width: 90%;
     max-width: 800px;
     min-width: 280px;
@@ -64,21 +81,16 @@ main {
     border-radius: 0 0 10px 10px;
 }
 
-@font-face {
-    font-family: 'idroid';
-    src: url(pacote-projeto-d010/fontes/idroid.otf);
-}
-
-.titulos1 {
+main h1 {
     font-family: 'idroid',Arial, Helvetica, sans-serif;
     color: #0d2e1b;
     font-size: 30px;
     min-width: 50%;
 }
 
-.titulos2 {
-    font-family: 'idroid',Arial, Helvetica, sans-serif;
-    color: #0d2e1b;
+main h2 {
+    font-family: var(--fonte-android);
+    color: var(--color05)
     font-size: 20px;
     background-image: linear-gradient(to right,rgb(162, 255, 162),transparent);
     text-align: justify;
