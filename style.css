@@ -73,6 +73,7 @@ main {
     font-family: 'idroid',Arial, Helvetica, sans-serif;
     color: #0d2e1b;
     font-size: 30px;
+    min-width: 50%;
 }
 
 .titulos2 {
